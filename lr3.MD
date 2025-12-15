@@ -167,3 +167,5 @@ MERMAID
 MERMAID + GITHUB
 <br>
 <br>
+flowchart
+  A([Начало]) --> B[Середина] --> C([Конец])
