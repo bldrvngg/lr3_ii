@@ -217,4 +217,34 @@ Multiline string (многострочная строка) — строка в P
 [![](https://mermaid.ink/img/pako:eNpVkMFugkAQhl9lM6c2QYOgontoUrH1YtMePBU8TGRgN5VdsiyxFnj3Lpim7Z528n_fP8m0cNIZAYf8rC8ngcaywzZVzL3HJBZG1rbE-sgmk4duR5aVWtG1Y5u7nWa10FUlVXF_4zcDxOJ2P2DErJDqo79F8ei_KurYNtljZXV1_JscLrpjT4l8E67-fyIMOes5yZHnODmhYTGaI3hQGJkBt6YhD0oyJQ4jtIOcghVUUgrcfTPKsTnbFFLVO61C9a51-WMa3RQCXPW5dlNTZWhpK7Ew-IuQysjEulEW-GJsAN7CJ_BwsZ7OokUYRutluFzPg9CDq2P8qb8M5tE8mPn-Kug9-Bo3-tNV5HzKpNXm5Xb28fr9N3iJeSs?type=png)](https://mermaid.live/edit#pako:eNpVkMFugkAQhl9lM6c2QYOgontoUrH1YtMePBU8TGRgN5VdsiyxFnj3Lpim7Z528n_fP8m0cNIZAYf8rC8ngcaywzZVzL3HJBZG1rbE-sgmk4duR5aVWtG1Y5u7nWa10FUlVXF_4zcDxOJ2P2DErJDqo79F8ei_KurYNtljZXV1_JscLrpjT4l8E67-fyIMOes5yZHnODmhYTGaI3hQGJkBt6YhD0oyJQ4jtIOcghVUUgrcfTPKsTnbFFLVO61C9a51-WMa3RQCXPW5dlNTZWhpK7Ew-IuQysjEulEW-GJsAN7CJ_BwsZ7OokUYRutluFzPg9CDq2P8qb8M5tE8mPn-Kug9-Bo3-tNV5HzKpNXm5Xb28fr9N3iJeSs)
 
 
+***Base64***
+
+Основная идея Base64 — преобразовывать любые двоичные данные (файлы, изображения) в текст, используя всего 64 безопасных ASCII-символа, что позволяет передавать бинарную информацию через системы, предназначенные только для текста, например, по электронной почте. Число 64 означает, что в алфавите кодировки есть 64 уникальных символа (A-Z, a-z, 0-9, +, /), каждый из которых представляет 6 бит данных. 
+
+Основная идея:
+-Преобразование в 6-битные блоки: Исходные двоичные данные (байты по 8 бит) группируются в 24-битные блоки.
+
+-Кодирование в 6-битные индексы: Каждый 24-битный блок делится на четыре 6-битных части, каждой из которых соответствует один символ из алфавита Base64 (поскольку \(2^{6}=64\)).
+
+-Увеличение размера данных: Из-за этого каждые 3 байта исходных данных преобразуются в 4 символа Base64, что увеличивает размер данных примерно на 33%.
+
+Что означает число 64: Это размер алфавита кодирования, а также основание системы счисления (radix-64), используемой для представления данных. 
+
+«Алфавит» Base64 (Base64 alphabet):Состоит из 64 символов:
+
+-Латинские заглавные буквы: A-Z (26 символов)
+
+-Латинские строчные буквы: a-z (26 символов)
+
+-Цифры: 0-9 (10 символов)
+
+-Специальные символы: + и / (2 символа)
+
+-Знак дополнения: = (используется в конце для выравнивания, если количество бит не кратно 24). 
+
+Также вставляем нашу диаграмму **VSCode** и получаем тот же результат
+
+Проделываем ту же работу через Docker Desktop. Запускаем контейнер с онлайн редактором. Вставляем свой код и генерируем диаграмму.
+<img width="1199" height="52" alt="522764272-d9a9998d-6cfb-477e-9666-164ca6c9fd2c" src="https://github.com/user-attachments/assets/1d7220ea-05d9-470f-af05-4ecc18f0b332" />
+
 
