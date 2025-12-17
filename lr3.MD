@@ -130,7 +130,8 @@ Workflow фокусируется на логике «организации»: 
 <img width="678" height="576" alt="image" src="https://github.com/user-attachments/assets/c1022668-dd78-45b1-ab8d-0548391460eb" />
 
 
-**Задание: Сохраните вашу диаграмму во всех четырёх форматах. Ознакомьтесь с содержимым файлов. Изучите, как эти файлы отображаются на экране при просмотре. **
+**Задание: Сохраните вашу диаграмму во всех четырёх форматах. Ознакомьтесь с содержимым файлов. Изучите, как эти файлы отображаются на экране при просмотре.**
+
 формат XML:
 
 <img width="955" height="733" alt="image" src="https://github.com/user-attachments/assets/1500884a-8d7e-4fbb-9738-51286e372589" />
@@ -150,6 +151,7 @@ Workflow фокусируется на логике «организации»: 
 
 <img width="697" height="407" alt="image" src="https://github.com/user-attachments/assets/d139f9fc-0383-45ba-b623-a021cc830d39" />
 
+Просмотрев наши файлы, замечаем, что значительных отличий у блок-схемы не наблюдается.
 
 
 ***MERMAID***
@@ -161,6 +163,58 @@ Workflow фокусируется на логике «организации»: 
 
 
 
-***MERMAID + GITHUB***
+Чтобы вставить изображения в DOCX и Markdown (MD), используйте метод перетаскивания (drag-and-drop), копирование-вставка (Ctrl+C, Ctrl+V) или меню «Вставка» (для DOCX) и специальный синтаксис для MD, который включает путь к файлу. 
+
+Создаем блок-схему на сайте Mermaid, сохраняем ее в png и в svg, а также копируем и вставляем в Word:
+
+<img width="2613" height="1602" alt="image" src="https://github.com/user-attachments/assets/73452e03-67cc-4486-a7b8-e160a9769cae" />
+
+Вставляется такая картинка и мы можем понять, что проще всего будет копировать изображение и вставлять в нужный нам документ.
+
+Также копируем диаграмму в формате Markdown и вставляем ее в **Google Colab:**
+
+<img width="1920" height="1005" alt="image" src="https://github.com/user-attachments/assets/00520587-04c1-429e-9036-906dcd055b6e" />
+
+Создаем эту же диаграмму на **GitHub:**
+
+<img width="1919" height="952" alt="image" src="https://github.com/user-attachments/assets/c5429504-0a5d-4edf-89ed-c15440d9e87c" />
+
+Копируем ее и вставляем в текстовый и графический редакторы. В обоих редакторах диаграмма не появляется, только код:
+
+<img width="524" height="88" alt="image" src="https://github.com/user-attachments/assets/c8bbde1f-e7e8-49f4-9ed7-6b9860b60b99" />
+
+Более сложная схема, созданная мной на сайте **Programforyou:**
+
+<img width="332" height="651" alt="image" src="https://github.com/user-attachments/assets/cbf43457-1c94-4668-8d91-ff55cf4fe554" />
+
+
+**Инструменты и технологии:**
+
+Base64 — алгоритм кодирования любых двоичных данных (например, картинки) в строку из ASCII-символов. Нужен для безопасной передачи данных в текстовых протоколах.
+
+IPython — интерактивная оболочка для Python с улучшенными возможностями (автодополнение, встроенная справка). Ядро для Jupyter.
+
+Jupyter Notebook — веб-приложение для создания интерактивных документов, содержащих код (на Python и др.), текст, визуализации и вывод. Основан на IPython.
+
+Pyplot — интерфейс библиотеки Matplotlib, предоставляющий набор команд в стиле MATLAB для построения графиков и диаграмм.
+
+Matplotlib — основная библиотека Python для создания статических, анимированных и интерактивных визуализаций.
+
+UTF-8 — самая распространённая кодировка символов Unicode. Позволяет представлять практически все письменности мира. Совместима с ASCII.
+
+URL (Uniform Resource Locator) — адрес ресурса в интернете (например, https://github.com).
+
+ASCII — базовая кодировка символов для английского алфавита, цифр и управляющих кодов (128 символов). Основа для современных кодировок.
+
+Параметры функции — переменные, указанные в её объявлении (в заголовке). Аргументы — конкретные значения, которые передаются в функцию при её вызове.
+
+String (строка) — тип данных, представляющий последовательность символов (текст).
+
+Multiline string (многострочная строка) — строка в Python, занимающая несколько строк кода. Создаётся с помощью тройных кавычек (''' или """).
+
+Вставляем изображение с помощью ссылки:
+
+[![](https://mermaid.ink/img/pako:eNpVkMFugkAQhl9lM6c2QYOgontoUrH1YtMePBU8TGRgN5VdsiyxFnj3Lpim7Z528n_fP8m0cNIZAYf8rC8ngcaywzZVzL3HJBZG1rbE-sgmk4duR5aVWtG1Y5u7nWa10FUlVXF_4zcDxOJ2P2DErJDqo79F8ei_KurYNtljZXV1_JscLrpjT4l8E67-fyIMOes5yZHnODmhYTGaI3hQGJkBt6YhD0oyJQ4jtIOcghVUUgrcfTPKsTnbFFLVO61C9a51-WMa3RQCXPW5dlNTZWhpK7Ew-IuQysjEulEW-GJsAN7CJ_BwsZ7OokUYRutluFzPg9CDq2P8qb8M5tE8mPn-Kug9-Bo3-tNV5HzKpNXm5Xb28fr9N3iJeSs?type=png)](https://mermaid.live/edit#pako:eNpVkMFugkAQhl9lM6c2QYOgontoUrH1YtMePBU8TGRgN5VdsiyxFnj3Lpim7Z528n_fP8m0cNIZAYf8rC8ngcaywzZVzL3HJBZG1rbE-sgmk4duR5aVWtG1Y5u7nWa10FUlVXF_4zcDxOJ2P2DErJDqo79F8ei_KurYNtljZXV1_JscLrpjT4l8E67-fyIMOes5yZHnODmhYTGaI3hQGJkBt6YhD0oyJQ4jtIOcghVUUgrcfTPKsTnbFFLVO61C9a51-WMa3RQCXPW5dlNTZWhpK7Ew-IuQysjEulEW-GJsAN7CJ_BwsZ7OokUYRutluFzPg9CDq2P8qb8M5tE8mPn-Kug9-Bo3-tNV5HzKpNXm5Xb28fr9N3iJeSs)
+
 
 
